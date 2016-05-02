@@ -1,1 +1,6 @@
 *.mat
+run[0-9][0-9][0-9]
+*.nc
+bb_wetl_ext.ext
+bb_z2.bot
+bbtm10m.bot
