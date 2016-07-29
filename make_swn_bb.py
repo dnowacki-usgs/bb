@@ -61,11 +61,11 @@ if runargs.veg_on == True:
     # f.write("READINP NPLANTS 1 '../bb_wetext_50m_5x5.wet' 1 0 FREE\n")
     
     if not hasattr(runargs, 'veg_height'):
-        runargs.veg_height = 1.0
+        runargs.veg_height = 0.25
     if not hasattr(runargs, 'veg_diam'):
         runargs.veg_diam = 0.015
     if not hasattr(runargs, 'veg_nstems'):
-        runargs.veg_nstems = 400
+        runargs.veg_nstems = 821.5
     if not  hasattr(runargs, 'veg_drag'):
         runargs.veg_drag = 1.0
     
