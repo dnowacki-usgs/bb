@@ -65,7 +65,7 @@ if runargs.veg_on == True:
     if not hasattr(runargs, 'veg_diam'):
         runargs.veg_diam = 0.015
     if not hasattr(runargs, 'veg_nstems'):
-        runargs.veg_nstems = 821.5
+        runargs.veg_nstems = 821
     if not  hasattr(runargs, 'veg_drag'):
         runargs.veg_drag = 1.0
     

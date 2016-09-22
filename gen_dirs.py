@@ -4,7 +4,7 @@ import os
 
 n = 1
 
-for level in [0.0, 0.5, 1.0, 2.0]:
+for level in [0.0, 0.5, 1.0, 1.5]:
     for veg_on in [True, False]:
         for wind_speed in [5, 10, 15]:
             for wind_dir in [0, 45, 90, 135, 180, 225, 270, 315]:    
