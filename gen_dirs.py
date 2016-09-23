@@ -6,7 +6,7 @@ n = 1
 
 for level in [0.0, 0.5, 1.0, 1.5]:
     for veg_on in [True, False]:
-        for wind_speed in [5, 10, 15]:
+        for wind_speed in [7.5, 10, 15]:
             for wind_dir in [0, 45, 90, 135, 180, 225, 270, 315]:    
     
                 directory = 'run' + str(n).zfill(3)

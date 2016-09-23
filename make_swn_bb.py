@@ -114,7 +114,7 @@ f.write("BLOCK 'COMPGRID' NOHEADER '/clay/usgs/users/dnowacki/bb/" + rundir + "/
 print >>f, """$ Computation
 TEST 1,0
 PROP BSBT
-NUMERIC STOPC NPNTS 98.0
+NUMERIC STOPC NPNTS 99.0 STAT MXITST 75
 COMPUTE
 
 STOP
