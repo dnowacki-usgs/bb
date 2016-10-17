@@ -63,7 +63,7 @@ if runargs.veg_on == True:
     if not hasattr(runargs, 'veg_height'):
         runargs.veg_height = 0.25
     if not hasattr(runargs, 'veg_diam'):
-        runargs.veg_diam = 0.015
+        runargs.veg_diam = 0.003
     if not hasattr(runargs, 'veg_nstems'):
         runargs.veg_nstems = 821
     if not  hasattr(runargs, 'veg_drag'):
@@ -110,11 +110,12 @@ f.write("BLOCK 'COMPGRID' NOHEADER '/clay/usgs/users/dnowacki/bb/" + rundir + "/
 f.write("BLOCK 'COMPGRID' NOHEADER '/clay/usgs/users/dnowacki/bb/" + rundir + "/dissip.mat' LAY 3 DISSIP 1. \n")
 f.write("BLOCK 'COMPGRID' NOHEADER '/clay/usgs/users/dnowacki/bb/" + rundir + "/disbot.mat' LAY 3 DISBOT 1. \n")
 f.write("BLOCK 'COMPGRID' NOHEADER '/clay/usgs/users/dnowacki/bb/" + rundir + "/diswcap.mat' LAY 3 DISWCAP 1. \n")
+f.write("BLOCK 'COMPGRID' NOHEADER '/clay/usgs/users/dnowacki/bb/" + rundir + "/transp.mat' LAY 3 TRANSP 1. \n")
 
 print >>f, """$ Computation
 TEST 1,0
 PROP BSBT
-NUMERIC STOPC NPNTS 99.0 STAT MXITST 75
+NUMERIC STOPC NPNTS 99.5 STAT MXITST 75
 COMPUTE
 
 STOP
