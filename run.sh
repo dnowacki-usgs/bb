@@ -40,7 +40,7 @@
 #
 # (optional) provide a name for this job.  Will default to the name
 # of this script if not specified.
-#$ -N swan
+##$ -N swan
 #
 # (required) Set the Parallel Environment and number of procs.
 #$ -pe mpi 48
@@ -85,7 +85,7 @@ echo `date`
 
 PATH=$MPI_HOME/bin:$PATH
 PATH=$PATH:/scylla-a/home/dnowacki/swash:/scylla-a/home/dnowacki/swan4101
-module load gnu
+module load intel
 ##module load pgi
 
 # OpenMPI will automatically get the number of cpus/nodes
