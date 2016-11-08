@@ -95,23 +95,23 @@ if runargs.friction_on == True:
         
 f.write("$ Output\n")
 
-f.write("SPECOUT 'COMPGRID' SPEC1D ABS '/scratch/dnowacki/bb/" + rundir + "/spec.nc' \n")
+f.write("SPECOUT 'COMPGRID' SPEC1D ABS '/sand/usgs/users/dnowacki/bb/" + rundir + "/spec.nc' \n")
 
-f.write("BLOCK 'COMPGRID' NOHEADER '/scratch/dnowacki/bb/" + rundir + "/hsig.nc' LAY 3 HSIG 1. \n")
-f.write("BLOCK 'COMPGRID' NOHEADER '/scratch/dnowacki/bb/" + rundir + "/tm01.nc' LAY 3 TM01 1. \n")
-f.write("BLOCK 'COMPGRID' NOHEADER '/scratch/dnowacki/bb/" + rundir + "/wlen.nc' LAY 3 WLEN 1. \n")
-f.write("BLOCK 'COMPGRID' NOHEADER '/scratch/dnowacki/bb/" + rundir + "/ubot.nc' LAY 3 UBOT 1. \n")
-f.write("BLOCK 'COMPGRID' NOHEADER '/scratch/dnowacki/bb/" + rundir + "/botlev.nc' LAY 3 BOTLEV 1. \n")
-f.write("$ BLOCK 'COMPGRID' NOHEADER '/scratch/dnowacki/bb/" + rundir + "/xp.nc' LAY 3 XP 1. \n")
-f.write("$ BLOCK 'COMPGRID' NOHEADER '/scratch/dnowacki/bb/" + rundir + "/yp.nc' LAY 3 YP 1. \n")
+f.write("BLOCK 'COMPGRID' NOHEADER '/sand/usgs/users/dnowacki/bb/" + rundir + "/hsig.nc' LAY 3 HSIG 1. \n")
+f.write("BLOCK 'COMPGRID' NOHEADER '/sand/usgs/users/dnowacki/bb/" + rundir + "/tm01.nc' LAY 3 TM01 1. \n")
+f.write("BLOCK 'COMPGRID' NOHEADER '/sand/usgs/users/dnowacki/bb/" + rundir + "/wlen.nc' LAY 3 WLEN 1. \n")
+f.write("BLOCK 'COMPGRID' NOHEADER '/sand/usgs/users/dnowacki/bb/" + rundir + "/ubot.nc' LAY 3 UBOT 1. \n")
+f.write("BLOCK 'COMPGRID' NOHEADER '/sand/usgs/users/dnowacki/bb/" + rundir + "/botlev.nc' LAY 3 BOTLEV 1. \n")
+f.write("$ BLOCK 'COMPGRID' NOHEADER '/sand/usgs/users/dnowacki/bb/" + rundir + "/xp.nc' LAY 3 XP 1. \n")
+f.write("$ BLOCK 'COMPGRID' NOHEADER '/sand/usgs/users/dnowacki/bb/" + rundir + "/yp.nc' LAY 3 YP 1. \n")
 
 f.write("$ Can't use NetCDF for some variables \n")
 
-f.write("BLOCK 'COMPGRID' NOHEADER '/scratch/dnowacki/bb/" + rundir + "/nplant.mat' LAY 3 NPLANT 1. \n")
-f.write("BLOCK 'COMPGRID' NOHEADER '/scratch/dnowacki/bb/" + rundir + "/dissip.mat' LAY 3 DISSIP 1. \n")
-f.write("BLOCK 'COMPGRID' NOHEADER '/scratch/dnowacki/bb/" + rundir + "/disbot.mat' LAY 3 DISBOT 1. \n")
-f.write("BLOCK 'COMPGRID' NOHEADER '/scratch/dnowacki/bb/" + rundir + "/diswcap.mat' LAY 3 DISWCAP 1. \n")
-f.write("BLOCK 'COMPGRID' NOHEADER '/scratch/dnowacki/bb/" + rundir + "/transp.mat' LAY 3 TRANSP 1. \n")
+f.write("BLOCK 'COMPGRID' NOHEADER '/sand/usgs/users/dnowacki/bb/" + rundir + "/nplant.mat' LAY 3 NPLANT 1. \n")
+f.write("BLOCK 'COMPGRID' NOHEADER '/sand/usgs/users/dnowacki/bb/" + rundir + "/dissip.mat' LAY 3 DISSIP 1. \n")
+f.write("BLOCK 'COMPGRID' NOHEADER '/sand/usgs/users/dnowacki/bb/" + rundir + "/disbot.mat' LAY 3 DISBOT 1. \n")
+f.write("BLOCK 'COMPGRID' NOHEADER '/sand/usgs/users/dnowacki/bb/" + rundir + "/diswcap.mat' LAY 3 DISWCAP 1. \n")
+f.write("BLOCK 'COMPGRID' NOHEADER '/sand/usgs/users/dnowacki/bb/" + rundir + "/transp.mat' LAY 3 TRANSP 1. \n")
 
 print >>f, """$ Computation
 TEST 1,0
