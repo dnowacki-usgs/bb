@@ -15,13 +15,13 @@ for f in $(eval echo {$1..$2}); do
     awk '{print $1 " " $5}' ACCURACY_RUNNO.txt > ACCURACY.txt
     rm ACCURACY_RUNNO.txt
 
-    mv ACCURACY.txt /scratch/dnowacki/bb/$folder/ACCURACY.txt
+    mv ACCURACY.txt /sand/usgs/users/dnowacki/bb/$folder/ACCURACY.txt
 
-    cp runargs.py /scratch/dnowacki/bb/$folder/runargs.py
+    cp runargs.py /sand/usgs/users/dnowacki/bb/$folder/runargs.py
    
     cd ..
 
-    cd /scratch/dnowacki/bb/$folder
+    cd /sand/usgs/users/dnowacki/bb/$folder
     ~/bb/convmat2nc.py
     ~/bb/runargs2nc.py
 
